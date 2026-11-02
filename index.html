@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JianJi-m 的 GitHub Pages</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --border: #d0d7de;
+    --ok: #1a7f37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  .wrap { width: 100%; max-width: 720px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 1px 3px rgba(31,35,40,.06);
+  }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 28px; font-size: 15px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #dafbe1; color: var(--ok);
+    font-size: 13px; font-weight: 600;
+    padding: 4px 12px; border-radius: 20px; margin-bottom: 24px;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+  ul { list-style: none; padding: 0; margin: 0 0 28px; }
+  li {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 12px 0; border-bottom: 1px solid var(--border);
+  }
+  li:last-child { border-bottom: none; }
+  .tick { color: var(--ok); font-weight: 700; flex-shrink: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; }
+  a.btn {
+    display: inline-block; text-decoration: none;
+    color: #fff; background: var(--accent);
+    padding: 10px 20px; border-radius: 8px;
+    font-size: 14px; font-weight: 600;
+  }
+  a.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--border); }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="badge"><span class="dot"></span> GitHub Pages 已上线</div>
+      <h1>JianJi-m 的 GitHub Pages</h1>
+      <p class="sub">这个页面由 GitHub 免费托管，直接来自仓库里的 index.html 文件。</p>
+
+      <ul>
+        <li><span class="tick">✓</span><span>建仓库、改文件、提交、推送</span></li>
+        <li><span class="tick">✓</span><span>建分支 → Pull Request → 合并</span></li>
+        <li><span class="tick">✓</span><span>Issue 协作（创建 / 评论 / 标签 / 关闭）</span></li>
+        <li><span class="tick">✓</span><span>打标签 + Release 发布版本</span></li>
+        <li><span class="tick">✓</span><span>GitHub Pages 发布网页</span></li>
+      </ul>
+
+      <div class="links">
+        <a class="btn" href="https://github.com/JianJi-m/desktop-tutorial">查看仓库</a>
+        <a class="btn ghost" href="https://github.com/JianJi-m">我的 GitHub 主页</a>
+      </div>
+    </div>
+    <footer>Powered by GitHub Pages · JianJi-m</footer>
+  </div>
+</body>
+</html>
